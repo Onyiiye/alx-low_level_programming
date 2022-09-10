@@ -1,31 +1,33 @@
-TASK 10:
-
 #include <stdio.h>
-
 /**
- * main - prints all possible different combinations of two digits
- * Return: ALways 0 (Success)
+ * main - Entry point
+ *
+ * Return: Always 0 (Success/correct)
  */
+
 int main(void)
 {
-  int n, m;
+	int i;
+	int j;
 
-  for (n = 48; n <= 56; n++)
-  {
-    for (m = 49; m <= 57; m++)
-    {
-      if (m > n)
-      {
-        putchar(n);
-        putchar(m);
-        if (n != 56 || m != 57)
-        {
-          putchar(',');
-          putchar(' ');
-        }
-      }
-    }
-  }
-  putchar('\n');
-  return (0);
+	for (i = 48; i < 58; i++)
+	{
+		for (j = 48; j < 58; j++)
+		{
+			if (i != j && i < j)
+			{
+				putchar(i);
+				putchar(j);
+				if (j == 57 && i == 56)
+				{
+					break
+						;
+				}
+				putchar(',');
+				putchar(' ');
+			}
+		}
+	}
+	putchar('\n');
+	return (0);
 }

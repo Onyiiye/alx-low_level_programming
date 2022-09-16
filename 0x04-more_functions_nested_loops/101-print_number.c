@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * print_number - prints a number using _putchar
- * @n: number to print
- * Return: void
- */
+*print_number - prints a numbe that uses _putchar
+*@n: number to print
+*Return: void
+*/
 
 void print_number(int n)
 {
@@ -26,10 +26,10 @@ num_to_char(un);
 }
 
 /**
- * num_to_char - transforms a number with 1 or more digits into a char
- * @n: number to print
- * Return: void
- */
+*num_to_char - transforms a number with 1 or more digits into a char
+*@n: number to print
+*Return: void
+*/
 
 void num_to_char(unsigned int n)
 {

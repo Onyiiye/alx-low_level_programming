@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
 *_srtlen -returns the length of a string
 *@s: string

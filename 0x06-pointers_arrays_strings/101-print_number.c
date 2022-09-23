@@ -1,52 +1,31 @@
-#include "main.h"
-
+#include <stdio.h>
 /**
- * base10 - power in 10 base
- * @n: an exponent
- * Return: returns 10 to power exponent
+ * main - function that checks for uppercase character.
+ * Return: 0
  */
-int base10(int n)
+int main(void)
 {
-	int base = 10;
+	int h = 1;
 
-	while (n > 0)
+	while (h <= 100)
 	{
-		base *= 10;
-		n--;
-	}
-	return (base);
-}
-
-/**
- * print_number - prints integers enters as parameters using putchar
- * @n: integer to print
- * Return: void
- */
-void print_number(int n)
-{
-	int power;
-
-	power = base10(8);
-
-	if (n < 0)
-	{
-		_putchar('-');
-		n *= -1;
-	}
-
-	if (n == 0)
-		_putchar('0');
-
-	else
-	{
-		while (n / power == 0)
-			power /= 10;
-
-		while (power >= 1)
+		if (h % 3 == 0 && h % 5 == 0)
+			printf("FizzBuzz ");
+		else if (h % 5 == 0)
 		{
-			_putchar((n / power) + '0');
-			n %= power;
-			power /= 10;
+			if (h == 100)
+			{
+				printf("Buzz");
+				printf("\n");
+			}
+			else
+				printf("Buzz ");
 		}
+		else if (h % 3 == 0)
+			printf("Fizz ");
+		else
+			printf("%d ", h);
+	h++;
 	}
+return (0);
 }

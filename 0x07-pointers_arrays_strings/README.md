@@ -9,4 +9,3 @@ Make a pointer that points to a pointer that points to another pointer.
 7 - Write a function that prints the sum of two diagonals of a square matrix of integers.
 8 - Write a function that sets the value of a pointer to a char.
 9 - Create a file that contains the password for the crackme2 executable.
-

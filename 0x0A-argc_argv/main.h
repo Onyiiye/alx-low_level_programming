@@ -3,7 +3,7 @@
 
 #include <stdio.h>
 
-int _putchar(char c);
+int_putchar(char c);
 unsigned int coin_count(unsigned int count, int num);
 
 #endif /* MAIN_H */
